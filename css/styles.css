@@ -1,6 +1,7 @@
 :root {
   --orange: orange;
   --black: black;
+  --gradient: linear-gradient(90deg, #fcfeff 0%, #a5deff 100%);
 }
 
 html {
@@ -15,4 +16,11 @@ html {
 
 body {
   font-family: 'Montserrat', sans-serif;
+}
+
+.section {
+}
+
+.main-page {
+  background: var(--gradient);
 }
