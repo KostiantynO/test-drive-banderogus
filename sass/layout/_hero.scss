@@ -1,8 +1,12 @@
 .hero {
   display: flex;
   flex-direction: column;
-  height: 100%;
   justify-content: space-between;
+
+  @media screen and (min-width: $mobile) {
+    height: fit-content;
+    height: 100%;
+  }
 
   background: var(--gradient);
 
@@ -12,7 +16,7 @@
     justify-content: space-between;
 
     height: calc(100% - 100px);
-    @media screen and (max-width: $tablet) {
+    @media screen and (max-width: $pre-tablet) {
       flex-wrap: wrap;
     }
 
@@ -21,6 +25,7 @@
 
   &__container {
     align-self: center;
+
     padding: clamp(24px, 4.7vw, 60px) clamp(20px, 4.7vw, 56px);
     background-color: var(--white);
 
@@ -47,7 +52,7 @@
   }
 
   &__button {
-    @media screen and (max-width: $tablet) {
+    @media screen and (max-width: $pre-tablet) {
       margin: 0 auto;
     }
   }

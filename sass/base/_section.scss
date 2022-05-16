@@ -1,3 +1,5 @@
 .section {
-  contain: content;
+  @media screen and (min-width: $tablet) {
+    contain: content;
+  }
 }
