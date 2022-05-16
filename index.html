@@ -9,56 +9,75 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
     />
 
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
-    <section class="section hero">
-      <div class="container">
-        <header class="header">
-          <div class="logo">
+    <main>
+      <section class="section hero">
+        <div class="container">
+          <header class="header">
+            <div class="logo">
+              <a
+                class="logo__link"
+                rel="noopener noreferrer nofollow"
+                href="https://goit.ua"
+                target="_blank"
+              >
+                <svg
+                  class="logo__icon"
+                  aria-hidden="true"
+                  width="100"
+                  height="30"
+                >
+                  <use href="./img/logo.svg#logo"></use>
+                </svg>
+              </a>
+
+              <p class="logo__text text-small">
+                Школа підготовки <br />
+                IT-спеціалістів
+              </p>
+            </div>
+          </header>
+
+          <div class="hero__row">
+            <div class="hero__container">
+              <h3 class="hero__greeting text-subheader">
+                Доброго вечора, ми з України
+              </h3>
+
+              <h2 class="hero__start-text text-header">
+                На старт. Увага. Полетіли!
+              </h2>
+
+              <h1 class="hero__title text-accent">Бандерогусь</h1>
+
+              <p class="hero__descr">
+                Спеціальний бойовий гусак із біолабораторій України. Пишаюся
+                своїми подвигами, бороню Батьківщину та підтримую позитивний дух
+                народу. Слава Україні!
+              </p>
+
+              <button class="button button--primary hero__button" type="submit">
+                Запустити гуся
+              </button>
+            </div>
+
             <img
-              class="logo__img"
-              src="./img/logo.svg"
-              width="100"
-              height="30"
-              alt="GoIT logo"
+              class="hero__image"
+              src="./img/gus.svg"
+              alt="banderogus"
+              width="640"
             />
-
-            <p class="logo__text text-small">
-              Школа підготовки <br />
-              IT-спеціалістів
-            </p>
           </div>
-        </header>
-
-        <div class="hero__container">
-          <h3 class="hero__greeting text-subheader">
-            Доброго вечора, ми з України
-          </h3>
-
-          <h2 class="hero__start-text text-header">
-            На старт. Увага. Полетіли!
-          </h2>
-
-          <h1 class="hero__title text-accent">Бандерогусь</h1>
-
-          <p class="hero__descr">
-            Спеціальний бойовий гусак із біолабораторій України. Пишаюся своїми
-            подвигами, бороню Батьківщину та підтримую позитивний дух народу.
-            Слава Україні!
-          </p>
-
-          <button class="button button--primary" type="submit">
-            Запустити гуся
-          </button>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <script src="./index.js"></script>
   </body>

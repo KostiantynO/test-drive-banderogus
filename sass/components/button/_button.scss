@@ -3,10 +3,16 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
+
   padding: 12px 24px;
 
   font: inherit;
+
+  cursor: pointer;
   border-radius: 8px;
+
+  transition: var(--transition);
+  transition-property: color, background-color;
 
   &--primary {
     color: var(--white);
