@@ -1,0 +1,20 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 24px;
+
+  font: inherit;
+  border-radius: 8px;
+
+  &--primary {
+    color: var(--white);
+    background: var(--accent);
+
+    &:hover,
+    &:focus {
+      background: var(--accent-focused);
+    }
+  }
+}

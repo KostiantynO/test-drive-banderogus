@@ -1,0 +1,12 @@
+:root {
+  --accent: #ff6b0a;
+  --accent-focused: #ef5e0a;
+  --main: #191a1c;
+  --white: #ffffff;
+
+  --time: 250ms;
+  --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+  --transition: var(--time) var(--cubic);
+
+  --gradient: linear-gradient(90deg, #fcfeff 0%, #a5deff 100%);
+}
