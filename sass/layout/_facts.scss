@@ -3,7 +3,7 @@
 }
 
 .facts {
-  padding: clamp(20px, 3.7vw, 52px) 0 clamp(30px, 5.2vw, 72px);
+  padding: clamp(40px, 3.7vw, 52px) 0 clamp(30px, 5.2vw, 72px);
 
   &__container {
     display: flex;
@@ -31,6 +31,7 @@
 
   &__list {
     display: grid;
+
     grid-template-columns: repeat(1, 1fr);
     gap: clamp(16px, 1.7vw, 24px);
 

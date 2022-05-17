@@ -33,6 +33,7 @@
 
   &__wrapper {
     margin-top: 120px;
+
     align-self: center;
     padding: clamp(24px, 4.7vw, 60px) clamp(20px, 4.7vw, 56px);
     background-color: var(--white);
@@ -42,6 +43,8 @@
     border-radius: 4px;
 
     @media screen and (min-width: $desktop) {
+      margin-top: unset;
+
       width: 50%;
     }
   }

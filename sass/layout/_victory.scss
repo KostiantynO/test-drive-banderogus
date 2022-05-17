@@ -1,0 +1,41 @@
+.victory {
+  padding-bottom: 72px;
+
+  &__bgd {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    background: var(--gradient2);
+  }
+
+  &__container {
+    padding: 32px 12px;
+
+    @media screen and (min-width: $tablet) {
+      padding: 52px 34px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      padding: 72px 148px;
+    }
+  }
+
+  &__urk-emblem {
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+  }
+
+  // &__descr {}
+}
+
+.show-on-desktop {
+  @media screen and (max-width: $pre-desktop) {
+    display: none;
+  }
+}
