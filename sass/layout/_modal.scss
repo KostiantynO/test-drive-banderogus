@@ -1,0 +1,43 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  pointer-events: none;
+  visibility: hidden;
+  background: rgba($main, 0.7);
+  opacity: 0;
+  transition: var(--transition);
+  transition-property: opacity, visibility;
+}
+
+.modal {
+  position: relative;
+  padding: 32px 92px 60px;
+  background-color: var(--white);
+
+  &__close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    width: 24px;
+    height: 24px;
+    padding: 0;
+
+    font-size: 24px;
+
+    background: none;
+    border-radius: 50%;
+  }
+}
+
+.show-modal {
+  pointer-events: initial;
+  visibility: visible;
+  opacity: 1;
+}

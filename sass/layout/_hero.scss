@@ -70,13 +70,14 @@
   }
 
   &__button {
-    margin: 0 auto;
+    @media screen and (max-width: $pre-tablet) {
+      margin: 0 auto;
+    }
   }
 
   &__img {
     position: relative;
     bottom: -40px;
-    z-index: 100;
     align-self: flex-end;
     width: 70%;
     height: auto;

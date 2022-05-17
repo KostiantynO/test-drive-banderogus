@@ -3,6 +3,8 @@
   --accent-focused: #ef5e0a;
   --main: #191a1c;
   --white: #ffffff;
+  --blue: #005bbb;
+  --yellow: #ffd500;
 
   --time: 250ms;
   --cubic: cubic-bezier(0.4, 0, 0.2, 1);
@@ -11,3 +13,10 @@
   --gradient: linear-gradient(90deg, #fcfeff 0%, #a5deff 100%);
   --gradient2: linear-gradient(90deg, #ffffff 0%, #c1e8ff 100%);
 }
+
+$accent: #ff6b0a;
+$accent-focused: #ef5e0a;
+$main: #191a1c;
+$white: #ffffff;
+$blue: #005bbb;
+$yellow: #ffd500;

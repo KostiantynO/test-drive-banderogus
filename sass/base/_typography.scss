@@ -1,7 +1,7 @@
 .text-small {
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 500;
-  line-height: 15px;
+  line-height: 1.25;
 }
 
 .text-subheader {
@@ -26,4 +26,9 @@
   font-size: clamp(1.7rem, 3.5vw, 3rem);
   font-weight: 600;
   line-height: 2.08;
+}
+
+.text-input {
+  font-size: clamp(1.2rem, 1.8vw, 1.5rem);
+  line-height: 1;
 }
