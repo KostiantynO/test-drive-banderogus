@@ -1,35 +1,49 @@
 .hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  @media screen and (min-width: $mobile) {
-    height: fit-content;
-    height: 100%;
-  }
-
   background: var(--gradient);
 
+  &__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 20px;
+    margin: 0 auto;
+
+    // @media screen and (min-width: $tablet) {
+    // }
+
+    @media screen and (min-width: $desktop) {
+      padding-left: 95px;
+    }
+  }
+
   &__row {
+    align-self: center;
+    min-height: 100vh;
+
     position: relative;
     display: flex;
     justify-content: space-between;
 
-    height: calc(100% - 100px);
-    @media screen and (max-width: $pre-tablet) {
+    @media screen and (max-width: $pre-desktop) {
+      justify-content: center;
       flex-wrap: wrap;
     }
-
-    margin-top: clamp(40px, 20vw, 100px);
   }
 
-  &__container {
+  &__wrapper {
+    margin-top: 120px;
     align-self: center;
-
     padding: clamp(24px, 4.7vw, 60px) clamp(20px, 4.7vw, 56px);
     background-color: var(--white);
-
     max-width: 578px;
+
+    box-shadow: 1px 1px 2px rgba(33, 33, 33, 0.21);
+    border-radius: 4px;
+
+    @media screen and (min-width: $desktop) {
+      width: 50%;
+    }
   }
 
   &__greeting {
@@ -45,6 +59,7 @@
   &__title {
     margin-bottom: clamp(16px, 1.8vw, 24px);
     color: var(--main);
+    word-wrap: break-word;
   }
 
   &__descr {
@@ -52,15 +67,26 @@
   }
 
   &__button {
-    @media screen and (max-width: $pre-tablet) {
-      margin: 0 auto;
-    }
+    margin: 0 auto;
   }
 
-  &__image {
-    width: clamp(300px, 70%, 668px);
-
+  &__img {
+    position: relative;
+    bottom: -40px;
+    z-index: 100;
     align-self: flex-end;
+    width: 70%;
+    height: auto;
+
+    @media screen and (min-width: $tablet) {
+      max-width: 45%;
+    }
+
+    @media screen and (min-width: $desktop) {
+      max-width: 53%;
+      width: 1000px;
+    }
+
     transition: width var(--transition);
   }
 }

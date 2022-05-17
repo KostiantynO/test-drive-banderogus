@@ -18,6 +18,8 @@
     color: var(--white);
     background: var(--accent);
 
+    box-shadow: 1px 1px 3px rgba(33, 33, 33, 0.21);
+
     &:hover,
     &:focus {
       background: var(--accent-focused);

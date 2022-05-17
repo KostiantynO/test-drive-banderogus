@@ -19,34 +19,36 @@
   <body>
     <main>
       <section class="section hero">
-        <div class="container">
+        <div class="hero__container">
           <header class="header">
-            <div class="logo">
-              <a
-                class="logo__link"
-                rel="noopener noreferrer nofollow"
-                href="https://goit.ua"
-                target="_blank"
-              >
-                <svg
-                  class="logo__icon"
-                  aria-hidden="true"
-                  width="100"
-                  height="30"
+            <div class="container">
+              <div class="logo">
+                <a
+                  class="logo__link"
+                  rel="noopener noreferrer nofollow"
+                  href="https://goit.ua"
+                  target="_blank"
                 >
-                  <use href="./img/logo.svg#logo"></use>
-                </svg>
-              </a>
+                  <svg
+                    class="logo__icon"
+                    aria-hidden="true"
+                    width="100"
+                    height="30"
+                  >
+                    <use href="./img/logo.svg#logo"></use>
+                  </svg>
+                </a>
 
-              <p class="logo__text text-small">
-                Школа підготовки <br />
-                IT-спеціалістів
-              </p>
+                <p class="logo__text text-small">
+                  Школа підготовки <br />
+                  IT-спеціалістів
+                </p>
+              </div>
             </div>
           </header>
 
           <div class="hero__row">
-            <div class="hero__container">
+            <div class="hero__wrapper">
               <h3 class="hero__greeting text-subheader">
                 Доброго вечора, ми з України
               </h3>
@@ -68,13 +70,85 @@
               </button>
             </div>
 
-            <img
-              class="hero__image"
-              src="./img/gus.svg"
-              alt="banderogus"
-              width="640"
-            />
+            <svg class="hero__img" width="640" height="720">
+              <use href="./img/gus.svg#gus"></use>
+            </svg>
           </div>
+        </div>
+      </section>
+
+      <section class="section facts">
+        <div class="container facts__container">
+          <svg class="ukr-emblem facts__emblem" width="32" height="52">
+            <use href="./img/tryzub.svg#tryzub"></use>
+          </svg>
+
+          <h3 class="facts__title text-subaccent">
+            Цікаві факти про бандерогусей
+          </h3>
+
+          <p class="facts__descr">
+            Зазвичай бандерогуси — виключно мирні птахи. Але у разі небезпеки
+            можуть атакувати ворога системою надпотужного озброєння. Також
+            нищать психологічно, активуючи високочастотне шипіння та
+            розмахування крилами
+          </p>
+
+          <!--
+            (li.facts__item>img.fact__img+h4.fact__title text-header+p.fact__descr)*3
+           -->
+          <ul class="facts__list">
+            <li class="fact facts__item">
+              <img
+                class="fact__img"
+                src="./img/gus1.svg"
+                width="374"
+                height="374"
+                alt="Ukrainian battle-goose with GPS"
+              />
+
+              <h4 class="fact__title text-header">Система навігації</h4>
+
+              <p class="fact__descr">
+                Супутниковий GPS та ехолокатори розпізнають ворожу техніку
+                навіть на етапі збірки
+              </p>
+            </li>
+
+            <li class="fact facts__item">
+              <img
+                class="fact__img"
+                src="./img/gus2.svg"
+                width="374"
+                height="374"
+                alt="Ukrainian battle-goose with night-vision"
+              />
+
+              <h4 class="fact__title text-header">Очі-тепловізори</h4>
+
+              <p class="fact__descr">
+                Допомагають виявити характер сигнатури об’єктів та значно
+                підвищують точність удару
+              </p>
+            </li>
+
+            <li class="fact facts__item">
+              <img
+                class="fact__img"
+                src="./img/gus3.svg"
+                width="374"
+                height="374"
+                alt="Ukrainian battle-goose with bayraktar wings"
+              />
+
+              <h4 class="fact__title text-header">Байракрила</h4>
+
+              <p class="fact__descr">
+                Можуть нести 2-4 керовані ракети, що вражають ціль на відстані
+                «ніхріна собі» кілометрів
+              </p>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
