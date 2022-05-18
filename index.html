@@ -182,91 +182,95 @@
 
     <div class="backdrop" id="data-modal-id" data-modal role="dialog">
       <div class="modal">
-        <button
-          class="button button--secondary modal__close-button"
-          data-modal-close
-          type="button"
-          aria-label="close"
-        >
-          <svg
-            class="icon-close success-modal__icon-close"
-            aria-hidden="true"
-            width="24"
-            height="24"
-          >
-            <use href="./img/close.svg#close"></use>
-          </svg>
-        </button>
-
-        <form class="modal-form" data-form>
-          <svg class="tryzub modal-form__tryzub" width="32" height="52">
-            <use href="./img/tryzub.svg#tryzub"></use>
-          </svg>
-
-          <h3 class="modal-form__title text-header">
-            Поділися, будь ласка, поштою
-          </h3>
-          <p class="modal-form__descr">та запиши гуся до бандерозагону</p>
-
-          <label class="modal-form__field">
-            <span class="modal-form__label-text">Ім’я</span>
-            <input
-              class="modal-form__input text-input"
-              name="name"
-              type="text"
-              required
-            />
-          </label>
-
-          <label class="modal-form__field">
-            <span class="modal-form__label-text">Email</span>
-            <input
-              class="modal-form__input text-input"
-              name="email"
-              type="email"
-              required
-            />
-          </label>
-
+        <div class="modal__container">
           <button
-            class="button button--primary modal-form__button"
-            data-launch-btn
-            type="submit"
+            class="button button--secondary modal__close-button"
+            data-modal-close
+            type="button"
+            aria-label="close"
           >
-            Запустити гуся
+            <svg
+              class="icon-close success-modal__icon-close"
+              aria-hidden="true"
+              width="24"
+              height="24"
+            >
+              <use href="./img/close.svg#close"></use>
+            </svg>
           </button>
-        </form>
+
+          <form class="modal-form" netlify data-form>
+            <svg class="tryzub modal-form__tryzub" width="32" height="52">
+              <use href="./img/tryzub.svg#tryzub"></use>
+            </svg>
+
+            <h3 class="modal-form__title text-header">
+              Поділися, будь ласка, поштою
+            </h3>
+            <p class="modal-form__descr">та запиши гуся до бандерозагону</p>
+
+            <label class="modal-form__field">
+              <span class="modal-form__label-text">Ім’я</span>
+              <input
+                class="modal-form__input text-input"
+                name="name"
+                type="text"
+                required
+              />
+            </label>
+
+            <label class="modal-form__field">
+              <span class="modal-form__label-text">Email</span>
+              <input
+                class="modal-form__input text-input"
+                name="email"
+                type="email"
+                required
+              />
+            </label>
+
+            <button
+              class="button button--primary modal-form__button"
+              data-launch-btn
+              type="submit"
+            >
+              Запустити гуся
+            </button>
+          </form>
+        </div>
       </div>
     </div>
 
     <div class="backdrop" data-success-modal>
       <div class="modal success-modal">
-        <button
-          class="button button--secondary modal__close-button"
-          data-modal-close
-          type="button"
-          aria-label="close"
-        >
-          <svg
-            class="icon-close success-modal__icon-close"
-            aria-hidden="true"
-            width="24"
-            height="24"
+        <div class="modal__container">
+          <button
+            class="button button--secondary modal__close-button"
+            data-modal-close
+            type="button"
+            aria-label="close"
           >
-            <use href="./img/close.svg#close"></use>
-          </svg>
-        </button>
+            <svg
+              class="icon-close success-modal__icon-close"
+              aria-hidden="true"
+              width="24"
+              height="24"
+            >
+              <use href="./img/close.svg#close"></use>
+            </svg>
+          </button>
 
-        <div class="success-modal__content">
-          <svg class="tryzub success-modal__tryzub" width="32" height="52">
-            <use href="./img/tryzub.svg#tryzub"></use>
-          </svg>
+          <div class="success-modal__content">
+            <svg class="tryzub success-modal__tryzub" width="32" height="52">
+              <use href="./img/tryzub.svg#tryzub"></use>
+            </svg>
 
-          <h3 class="success-modal__title text-header">
-            Дякуємо, гусь успішно запущений
-          </h3>
+            <h3 class="success-modal__title text-header">
+              Дякуємо, гусь успішно запущений
+            </h3>
 
-          <p class="success-modal__descr">Слава Україні! Героям Слава!</p>
+            <p class="success-modal__descr">Слава Україні! Героям Слава!</p>
+          </div>
         </div>
       </div>
     </div>
