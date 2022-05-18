@@ -65,7 +65,13 @@
                 народу. Слава Україні!
               </p>
 
-              <button class="button button--primary hero__button" type="submit">
+              <button
+                class="button button--primary hero__button"
+                data-modal-open
+                type="submit"
+                aria-controls="data-modal-id"
+                aria-expanded="false"
+              >
                 Запустити гуся
               </button>
             </div>
@@ -102,9 +108,9 @@
               <img
                 class="fact__img"
                 src="./img/gus1.svg"
+                alt="Ukrainian battle-goose with GPS"
                 width="374"
                 height="374"
-                alt="Ukrainian battle-goose with GPS"
               />
 
               <h4 class="fact__title text-header">Система навігації</h4>
@@ -119,9 +125,9 @@
               <img
                 class="fact__img"
                 src="./img/gus2.svg"
+                alt="Ukrainian battle-goose with night-vision"
                 width="374"
                 height="374"
-                alt="Ukrainian battle-goose with night-vision"
               />
 
               <h4 class="fact__title text-header">Очі-тепловізори</h4>
@@ -136,9 +142,9 @@
               <img
                 class="fact__img"
                 src="./img/gus3.svg"
+                alt="Ukrainian battle-goose with bayraktar wings"
                 width="374"
                 height="374"
-                alt="Ukrainian battle-goose with bayraktar wings"
               />
 
               <h4 class="fact__title text-header">Байракрила</h4>
@@ -174,24 +180,25 @@
       </div>
     </footer>
 
-    <div class="backdrop" data-modal>
+    <div class="backdrop" id="data-modal-id" data-modal role="dialog">
       <div class="modal">
         <button
           class="button button--secondary modal__close-button"
+          data-modal-close
           type="button"
           aria-label="close"
         >
           <svg
             class="icon-close success-modal__icon-close"
+            aria-hidden="true"
             width="24"
             height="24"
-            aria-hidden="true"
           >
             <use href="./img/close.svg#close"></use>
           </svg>
         </button>
 
-        <form action="#" class="modal-form" data-form>
+        <form class="modal-form" data-form>
           <svg class="tryzub modal-form__tryzub" width="32" height="52">
             <use href="./img/tryzub.svg#tryzub"></use>
           </svg>
@@ -204,23 +211,26 @@
           <label class="modal-form__field">
             <span class="modal-form__label-text">Ім’я</span>
             <input
+              class="modal-form__input text-input"
               name="name"
               type="text"
-              class="modal-form__input text-input"
+              required
             />
           </label>
 
           <label class="modal-form__field">
             <span class="modal-form__label-text">Email</span>
             <input
+              class="modal-form__input text-input"
               name="email"
               type="email"
-              class="modal-form__input text-input"
+              required
             />
           </label>
 
           <button
             class="button button--primary modal-form__button"
+            data-launch-btn
             type="submit"
           >
             Запустити гуся
@@ -233,14 +243,15 @@
       <div class="modal success-modal">
         <button
           class="button button--secondary modal__close-button"
+          data-modal-close
           type="button"
           aria-label="close"
         >
           <svg
             class="icon-close success-modal__icon-close"
+            aria-hidden="true"
             width="24"
             height="24"
-            aria-hidden="true"
           >
             <use href="./img/close.svg#close"></use>
           </svg>
@@ -260,6 +271,6 @@
       </div>
     </div>
 
-    <script src="./index.js"></script>
+    <script src="./js/index.js" type="module"></script>
   </body>
 </html>
